@@ -12,10 +12,12 @@ registry:
   username: bizzon31
 
   password: Pasport313@
+    # - KAMAL_REGISTRY_PASSWORD
 
 env:
   secret:
     - RAILS_MASTER_KEY
+    
 
 volumes:
   - "storage:/rails/storage"

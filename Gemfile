@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 # gem "dotenv-vault-rails", require: "dotenv-vault/rails-now"
+gem 'dotenv-rails', :groups => [:development, :test]
 gem "rails", "~> 8.0.0.rc1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"

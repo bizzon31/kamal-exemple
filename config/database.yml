@@ -32,8 +32,8 @@ production:
     adapter: sqlite3
     pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
     timeout: 5000
-    username: bizzon
-    password: "12345"
+    # username: bizzon
+    # password: "12345"
   cache:
     <<: *default
     database: storage/production_cache.sqlite3

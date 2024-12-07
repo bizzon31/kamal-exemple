@@ -1,0 +1,26 @@
+service: kamal_exemple
+
+image: bizzon31/kamal_exemple
+
+servers:
+    - 77.51.218.207
+
+ssh:
+  user: bizzon
+
+registry:
+  username: bizzon31
+
+  password: #Pasport313@
+    - KAMAL_REGISTRY_PASSWORD
+
+env:
+  secret:
+    - RAILS_MASTER_KEY
+    
+
+volumes:
+  - "storage:/rails/storage"
+
+builder:
+  arch: amd64

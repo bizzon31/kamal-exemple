@@ -1,12 +1,19 @@
+
 service: kamal_exemple
 
 image: bizzon31/kamal_exemple
 
 servers:
+  web:
     - 77.51.218.207
 
 ssh:
   user: bizzon
+
+# proxy: 
+#   ssl: true
+#   host: app.example.com
+#   app_port: 3000
 
 registry:
   username: bizzon31
@@ -17,10 +24,7 @@ registry:
 env:
   secret:
     - RAILS_MASTER_KEY
-    
-
-volumes:
-  - "storage:/rails/storage"
 
 builder:
   arch: amd64
+

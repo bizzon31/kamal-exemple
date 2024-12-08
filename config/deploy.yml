@@ -16,6 +16,7 @@ registry:
 env:
   secret:
     - RAILS_MASTER_KEY
+    - HELLO
 
 volumes:
   - "storage:/rails/storage"

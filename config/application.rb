@@ -1,5 +1,6 @@
 require_relative "boot"
-
+# require "dotenv" 
+# Dotenv.load
 require "rails/all"
 
 # Require the gems listed in Gemfile, including any gems
@@ -24,5 +25,8 @@ module KamalExemple
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # ! Проблема с загрузкой dotenv
+    # Dotenv::Railtie.load
   end
 end

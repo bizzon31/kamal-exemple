@@ -12,7 +12,7 @@ ssh:
 registry:
   username: bizzon31
 
-  password: kamal registry login
+  password: Pasport313@
     # - KAMAL_REGISTRY_PASSWORD
 env:
   clear:

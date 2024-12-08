@@ -11,13 +11,13 @@ ssh:
 registry:
   username: bizzon31
 
-  password: Pasport313@
-
+  password: #Pasport313@
+    - KAMAL_REGISTRY_PASSWORD
 env:
   secret:
     - RAILS_MASTER_KEY
     - HELLO
-    - SECRET_KEY_BASE
+    # - SECRET_KEY_BASE
 
 volumes:
   - "storage:/rails/storage"

@@ -1,3 +1,4 @@
+<% require "dotenv"; Dotenv.load(".env.rb") %>
 service: kamal_exemple
 
 image: bizzon31/kamal_exemple
@@ -12,8 +13,8 @@ ssh:
 registry:
   username: bizzon31
 
-  password: Pasport313@
-    # - KAMAL_REGISTRY_PASSWORD
+  password: #Pasport313@
+    - KAMAL_REGISTRY_PASSWORD
 env:
   clear:
     DB_HOST: 77.51.218.207

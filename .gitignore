@@ -35,3 +35,4 @@
 
 # Ignore my workbook
 /workbook/*
+/config/credentials/production.key

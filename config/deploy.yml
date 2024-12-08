@@ -16,15 +16,17 @@ registry:
   password: #Pasport313@
     - KAMAL_REGISTRY_PASSWORD
 env:
-  clear:
-    DB_HOST: 77.51.218.207
+  # clear:
+  #   DB_HOST: 77.51.218.207
   secret:
     - RAILS_MASTER_KEY
     - HELLO
     - SECRET_KEY_BASE
 
 volumes:
-  - "storage:/rails/storage"
+  # host path:container path
+  - "/db:/rails/sqlite"
+  - "/storage:/rails/storage"
 
 builder:
   arch: amd64

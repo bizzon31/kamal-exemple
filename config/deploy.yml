@@ -21,12 +21,12 @@ env:
   secret:
     - RAILS_MASTER_KEY
     - HELLO
-    - SECRET_KEY_BASE
+    # - SECRET_KEY_BASE
 
-volumes:
-  # host path:container path
-  - "/db:/rails/sqlite"
-  - "/storage:/rails/storage"
+# volumes:
+#   # host path:container path
+#   - "/db:/rails/sqlite"
+#   - "/storage:/rails/storage"
 
 builder:
   arch: amd64

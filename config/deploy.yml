@@ -7,8 +7,8 @@ servers:
   web:
     - 77.51.218.207
 
-ssh:
-  user: bizzon
+# ssh:
+#   user: bizzon
 
 registry:
   username: bizzon31
